@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <meta charset="UTF-8">
-  <title>Servidor</title>
+  <title>Servidor local</title>
 </head>
 <body>
 <div style="padding:8px">
@@ -11,6 +11,8 @@
   <div class="panel-body">
     <div class="text-center">
       <h3>Servidor de Aplicaciones Local</h3>
+      
+      <a href="/phpmyadmin" target="_blank"><img src="pma-logo.jpg" alt="phpmyadminlogo" width="100px">Ir a PHPMyAdmin</a>
     </div>
   </div>
 </div>
