@@ -23,7 +23,7 @@ echo '<div class="row">';
   echo '<div class="col-xs-6 col-md-3">';
     if (is_dir($archivo))//verificamos si es o no un directorio
     {
-        if ($archivo != '.' and $archivo != '..' and $archivo != 'bootstrap-3.3.7-dist') {
+        if ($archivo != '.' and $archivo != '..' and $archivo != 'bootstrap-3.3.7-dist' and $archivo != '.git') {
           $count++;
           # code...
           echo '<a href="'.$archivo.'" class="thumbnail">
