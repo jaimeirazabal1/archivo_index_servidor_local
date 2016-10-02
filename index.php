@@ -16,6 +16,7 @@
 </div>
 <?php 
 $directorio = opendir("."); //ruta actual
+$count=0;
 while ($archivo = readdir($directorio)) //obtenemos un archivo y luego otro sucesivamente
 {
 echo '<div class="row">';
@@ -23,6 +24,7 @@ echo '<div class="row">';
     if (is_dir($archivo))//verificamos si es o no un directorio
     {
         if ($archivo != '.' and $archivo != '..' and $archivo != 'bootstrap-3.3.7-dist') {
+          $count++;
           # code...
           echo '<a href="'.$archivo.'" class="thumbnail">
             <img src="inode-directory.png" width="100px" alt="folder">
@@ -34,6 +36,9 @@ echo '<div class="row">';
    
   echo '</div>';
 echo '</div>';
+}
+if ($count == 0) {
+  echo "<div class='text-center'><h2>No se Encontro ningun directorio.</h2></div>";
 }
 ?>
 </div>
